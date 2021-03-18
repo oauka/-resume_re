@@ -1,0 +1,98 @@
+@media screen and (max-width:640px) {
+
+    #content .skill > div { position: relative;
+        width: 80%;    
+        margin: 0 auto;    
+    }
+
+    .slide-outer .slick-arrow { 
+        font-size: 40px; color:#362e2b; 
+        position: absolute; top:50%;
+        transform: translateY(-50%); 
+        background: none; z-index: 99;
+    }
+
+    #contactme .form1 {
+        width: 70%;
+        margin: 50px auto;
+        padding: 50px 10px;
+        background: #736d6b;
+        border-radius: 5px;
+    }
+
+    #contactme .form1 label {
+        width: 100px; display: inline-block;
+        vertical-align: middle;
+        color: #fff; font-size: 13px; text-align: right;
+        padding-right: 20px;
+    }
+
+    #contactme .form1 input {
+        border: 1px solid #736d6b; padding: 3px 5px;
+        vertical-align: middle; font-size: 13px;
+        border-radius: 5px; width: 120px;
+    }
+
+    #contactme .form1 #memo {
+        width: calc(90% - 120px);
+        height: 150px; 
+        vertical-align: top;
+        border-radius: 5px;
+    }
+
+    #contactme .form1 #attach { font-size: 10px;}
+
+} /* 640px 마지막 괄호 */
+
+@media screen and (max-width:500px) {
+
+    #content .skill > div { position: relative;
+        width: 90%;    
+        margin: 0 auto;    
+    }
+
+    .slide-outer .slick-dots li {
+        display: inline-block; width: 50px; 
+        height: 3px; background: #736d6b;
+        margin: 0 5px;
+        position: relative; 
+    }
+
+    #nav {
+        color: #362e2b; font-family: 'Raleway';
+        font-weight: bold; text-align:center;
+        font-size: 14px;
+    }
+
+    #contactme .form1 {
+        width: 80%;
+        margin: 50px auto;
+        padding: 30px 10px;
+        background: #736d6b;
+        border-radius: 5px;
+    }
+
+    #contactme .form1 label {
+        width: 70px; display: inline-block;
+        vertical-align: middle;
+        color: #fff; font-size: 12px; text-align: right;
+        padding-right: 20px;
+    }
+
+    #contactme .form1 input {
+        border: 1px solid #736d6b; padding: 3px 5px;
+        vertical-align: middle; font-size: 12px;
+        border-radius: 5px; width: 100px;
+    }
+
+    #contactme .form1 p {
+        padding: 5px 0;
+    }
+
+    #contactme .form1 #memo {
+        width: calc(90% - 80px);
+        height: 150px; 
+        vertical-align: top;
+        border-radius: 5px;
+    }
+}
