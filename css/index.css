@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Raleway:wght@300&display=swap');
 /* font-family: 'Raleway' */
-
+* { outline: none; }
 .row { max-width: 1000px; margin: 0 auto; padding: 0 10px; }
 body { width: 100%; background: #362e2b; font-family: 'Nanum Gothic'; }
 
