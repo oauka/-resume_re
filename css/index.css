@@ -150,14 +150,53 @@ body { width: 100%; background: #362e2b; font-family: 'Nanum Gothic'; }
     position:absolute; top:50%;
     left:50%; transform:translate(-50%, -50%); 
     font-size:30px; color:#d1c0a5;
-    /* width: 50px; height: 50px; 
-    background: #362e2b; border-radius: 50%; */
     line-height: 2;
     opacity:0; transition:all 0.4s 0.2s;
 }
 .portfolio li > div:hover .view { opacity:1;  z-index:10 }
 .portfolio li img { transition:all 0.5s; }
 .portfolio li > div:hover > img { transform:scale(1.2); }
+
+.portfolio li i,
+.work li i { color: #d1c0a5; }
+
+/* work */
+.work { 
+    padding-top: 30px;
+    overflow: hidden; }
+.work li {
+    float: left; width: 32%;
+    margin-right: 2%;
+    position:relative; text-align: center;
+    background-size:cover;
+}
+.work img { border-radius: 10px; }
+.work li:nth-child(3){ margin-right: 0%;}
+
+
+.work li > div { overflow:hidden; position:relative; border-radius: 10px; }
+.work li > div::before {
+    content: ''; position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+    background: rgba(56,46,43,0.7);
+    opacity: 0; transition: all 0.4s;
+}
+.work li > div:hover::before {
+    opacity: 1; z-index:9;
+    border: 1px solid #d1c0a5;
+    border-radius: 10px;
+}
+
+.work .view {
+    position:absolute; top:50%;
+    left:50%; transform:translate(-50%, -50%); 
+    font-size:30px; color:#d1c0a5;
+    line-height: 2;
+    opacity:0; transition:all 0.4s 0.2s;
+}
+.work li > div:hover .view { opacity:1;  z-index:10 }
+.work li img { transition:all 0.5s; }
+.work li > div:hover > img { transform:scale(1.2); }
 
 
 /* contact */
@@ -291,9 +330,9 @@ body { width: 100%; background: #362e2b; font-family: 'Nanum Gothic'; }
 
 /* footer */
 #footer {
-    background: #362e2b; z-index: 99999;
+    background: #362e2b;
     width: 100%; text-align: center;
-    position:absolute; bottom:0; left:50%;
+    position:absolute;  left:50%;
     transform:translateX(-50%);
 }
 #footer p { padding: 10px 0;
@@ -302,11 +341,19 @@ body { width: 100%; background: #362e2b; font-family: 'Nanum Gothic'; }
 }
 
 .sns {
-    display: inline-block;
     position: fixed; z-index: 9999999;
-    color: #d1c0a5;
-    bottom: 10px;
-    right: 20px;
+    color: #362e2b;
+    bottom: 20px; right: 20px;
+    
 }
-.sns a { padding-right: 10px; }
-.sns a:hover { color: #fff; }
+.sns a {
+    display:inline-block;    
+    width:32px; height:32px; line-height:30px;
+    background: #d1c0a5;
+    border: 2px solid #362e2b;
+    border-radius: 50%;
+    transition:all 0.3s;
+    text-align: center;
+    
+}
+.sns a:hover { color: #d1c0a5; background:#362e2b; }
